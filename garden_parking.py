@@ -24,6 +24,11 @@ p_unic_mark.remove(None)
 for s in p_unic_mark:
     car_m = p.count(s)
     print(s,":",car_m)
+# List of parking Cars with park time.
+hours =[  1.20,0   ,2.30 ,0   ,0   ,3       ,4.35 ,9.10]
+for h in range(len(p)):
+    if p[h]!=None:
+        print("Parking lot:",h,"Model:",p[h],"Time:",hours[h],"hours")
 #Statistics (free/total) places in parking
 total= len(p)
 free= 0
